@@ -1,0 +1,10 @@
+# Maven build output
+app/demo-app/target/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
