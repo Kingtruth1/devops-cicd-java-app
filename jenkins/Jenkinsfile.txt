@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/<your-username>/devops-cicd-java-app.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                dir('app/demo-app') {
+                    sh 'mvn clean package'
+                }
+            }
+        }
+    }
+}
